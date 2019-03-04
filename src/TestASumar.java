@@ -3,10 +3,12 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class TestASumar {
-// Sin tests
-	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
+
+    @Test
+    public void testUnaCifra() {
+        ASumar sumi = new ASumar("5");
+        String resultado = sumi.mostrar();
+        assertEquals("5 = 5",resultado );
+    }
 
 }
