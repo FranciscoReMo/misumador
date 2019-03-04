@@ -16,5 +16,9 @@ class TestASumar {
         String resultado = sumi.mostrar();
         assertEquals("-5 = -5",resultado );
     }
-
+    @Test
+    public void testSumaVariasCifras() {
+        ASumar sumi = new ASumar("20");
+        String resultado = sumi.mostrar();
+        assertEquals("5 + 11 = 5",resultado );
 }
